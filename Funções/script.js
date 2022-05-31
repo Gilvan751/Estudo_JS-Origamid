@@ -1,8 +1,13 @@
-function areaQuadrado(lado) {
-    return lado * lado
+/* function areaQuadrado(lado) {
+    return lado * lado;
+    
 }
-areaQuadrado(4)
-areaQuadrado(5)
-areaQuadrado(2)
-document.write('areaQuadrado');
-areaQuadrado(4)
+console.log(areaQuadrado(4)) */
+function imc(peso, altura) {
+    const imc = peso / (altura ** 2);
+    return imc;
+}
+console.log(imc(80, 1.80));
+console.log(imc(80, 1.70));
+
+
