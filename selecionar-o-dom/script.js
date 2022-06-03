@@ -33,7 +33,29 @@ const titulos = document.querySelectorAll('.titulo');
 const fotosAnimais = document.querySelectorAll('.animais-lista img');
 
 // Retorna o segundo elemento
-console.log(gridSection[1]);
+console.log(gridSections[1]);
+
+
+// Retorne no console todas as imagens do site
+const img = document.querySelectorAll('img');
+console.log(img);
+
+// Retorne no console apenas as imagens que começaram com a palavra imagem
+const figura = document.querySelectorAll('img[src^="./img/imagem"]');
+console.log(figura);
+
+// Selecione todos os links internos (onde o href começa com #)
+const link = document.querySelectorAll('[href^="#"]'); //o ^e essencial para pegar apenas todos que começas com #
+console.log(link);
+
+// Selecione o primeiro h2 dentro de .animais-descricao
+const sub = document.querySelector('.animais-descricao h2');
+console.log(sub);
+
+// Selecione o último p do site
+const ultimo = document.querySelectorAll('p');
+console.log(ultimo[ultimo.length - 1]);//para acessa o ultimo podemos colocar tambem
+// console.log(ultimo[--ultimo.length])
 
 
 
