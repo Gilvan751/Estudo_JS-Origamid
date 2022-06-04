@@ -60,3 +60,7 @@ const tela = window.screen.width;
 console.log(tela);
 const animacao = window.Animation.length;
 console.log(animacao);
+
+
+const teste = document.querySelectorAll('p');
+console.log(teste[--teste.length])
