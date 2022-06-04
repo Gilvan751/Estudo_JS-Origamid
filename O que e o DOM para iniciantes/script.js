@@ -1,66 +1,71 @@
-/* window.alert('Bom dia');
-alert('Tdo certo'); */
-/* const href = window.location.href;
-console.log(href);
-if (href === 'http://127.0.0.1:5500/') {
-    console.log('O valor é igual'); */
-/* } */
+// Crie uma função para verificar se um valor é Truthy
 
-const h1Selecionado = document.querySelector('h1');
-console.log(h1Selecionado);
-/* h1Selecionado.innerText; */
+function verificar(valor) {    
+    
+    return !!valor;
+};
+console.log(verificar(12));
 
-h1Selecionado.addEventListener('click', function () {
-    console.log('Clicou em ', h1Selecionado);
-}) 
+// Crie uma função matemática que retorne o perímetro de um quadrado
+// lembrando: perímetro é a soma dos quatro lados do quadrado
+function perimetro(l) {
+    var p = 4 * l;
+    return p;
+};
+console.log(perimetro(6));
 
-function callbackh1() {
-    console.log('Clicou em ', h1Selecionado.innerText)
+// Crie uma função que retorne o seu nome completo
+// ela deve possuir os parâmetros: nome e sobrenome
+function nomeCompleto(nome, sobrenome) {
+    return `Seu nome completo é ${nome} ${sobrenome}`;
 }
-h1Selecionado.addEventListener('click', callbackh1);
 
-/* const titulo = document.querySelector('h1');
+console.log(nomeCompleto("Gilvan","Oliveira Silva"));
 
-titulo.innerText; // retorna o texto;
-console.log(titulo);
-titulo.classList; // retorna as classes;
-console.log(titulo);
-titulo.id; // retorna o id;
-console.log(titulo);
-titulo.offsetHeight; // retorna a altura do elemento;
-console.log(titulo); */
+// Crie uma função que verifica se um número é par
+var num ='' ;
+function par(num) {
+   
+    if (num % 2 == 0) {
+        return `O numero ${num} é par`;
+    } else
+    {
+        return `O numero ${num} digitado e impar`;
+        }
+};
+console.log(par(25));
+console.log(par(12));
+console.log(par(0));
 
-//titulo.addEventListener('click', callback);
-// ativa a função callback ao click no titulo
+// Crie uma função que retorne o tipo de
+// dado do argumento passado nela (typeof)
+function tipo(dado) {
+    
+    return typeof dado;
+};
+console.log(tipo(''));
 
+// addEventListener é uma função nativa do JavaScript
+// o primeiro parâmetro é o evento que ocorre e o segundo o Callback
+// utilize essa função para mostrar no console o seu nome completo
+// quando o evento 'scroll' ocorrer.
+addEventListener('click', function () {
+    console.log('Gilvan Oliveira Silva');
 
-// Retorne o url da página atual utilizando o objeto window
-const local = window.location.href;
-console.log(local);
-
-// Seleciona o primeiro elemento da página que
-// possua a classe ativo
-const at = document.querySelector('.ativo');
-console.log(at);
-
-// Retorne a linguagem do navegador
-const lingua = window.navigator.language;
-console.log(lingua);
-
-// Retorne a largura da janela 
-const largura = window.innerWidth;
-console.log(largura);
-const altura = window.innerHeight;
-console.log(altura);
-
-const scrool = window.scroll.length;
-console.log(scrool);
-
-const tela = window.screen.width;
-console.log(tela);
-const animacao = window.Animation.length;
-console.log(animacao);
+});
+addEventListener('scroll', () => {
+    console.log('Pedro jose');
+});
 
 
-const teste = document.querySelectorAll('p');
-console.log(teste[--teste.length])
+// Corrija o erro abaixo
+var totalPaises = 193;
+function precisoVisitar(paisesVisitados) {
+  
+  return `Ainda faltam ${totalPaises - paisesVisitados} países para visitar`;
+}
+function jaVisitei(paisesVisitados) {
+  return `Já visitei ${paisesVisitados} do total de ${totalPaises} países`;
+}
+console.log(precisoVisitar(20));
+console.log(jaVisitei(20));
