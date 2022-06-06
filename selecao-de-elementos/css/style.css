@@ -1,4 +1,4 @@
-  body, h1, h2, ul, li, p, dd, dt, dl {
+body, h1, h2, ul, li, p, dd, dt, dl {
   margin: 0px;
   padding: 0px;
 }
@@ -157,7 +157,7 @@ body {
   margin-bottom: 1rem;
   font-family: Helvetica, Arial;
 }
-/* esse e o quadradinho que fica do lado das lista */
+
 .dados li::before {
   content: '';
   display: inline-block;
